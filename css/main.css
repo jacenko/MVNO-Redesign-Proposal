@@ -1,0 +1,644 @@
+body {
+  height:100%;
+  margin:0;
+  padding-top:50px;
+}
+
+/*********************************************
+********                              ********
+********      Scroll-To-Top Arrow     ********
+********                              ********
+*********************************************/
+
+.top-shift {
+  margin-top: 60px;
+}
+
+#scroll-to-top {
+  visibility: hidden;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  opacity: 0;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#scroll-to-top.show {
+  visibility:visible;
+  cursor:pointer;
+	opacity: .7;
+}
+
+#scroll-to-top:hover {
+  opacity: 1.0;
+}
+
+/*********************************************
+********                              ********
+********          Home Slider         ********
+********                              ********
+*********************************************/
+
+#slider1-container {
+  min-height: 800px;
+  position:relative;
+  display:inline-block;
+  text-align:center;
+}
+
+.button-div {
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+
+/*********************************************
+********                              ********
+********            Dropup            ********
+********                              ********
+*********************************************/
+
+.caret-up {
+  /* Safari */
+  -webkit-transform: rotate(-180deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-180deg);
+
+  /* IE */
+  -ms-transform: rotate(-180deg);
+
+  /* Opera */
+  -o-transform: rotate(-180deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
+
+}
+
+.drop-up {
+  top: auto;
+  bottom: 100% !important;
+}
+
+/*********************************************
+********                              ********
+********             Footer           ********
+********                              ********
+*********************************************/
+
+.full {
+  width: 100%;
+}
+.gap {
+  height: 30px;
+  width: 100%;
+  clear: both;
+  display: block;
+}
+.footer {
+  background: #313131;
+  height: auto;
+  width: 100%;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+.footer p {
+  margin: 0;
+}
+.footer img {
+  max-width: 100%;
+}
+.footer h3 {
+  border-bottom: 1px solid #dfdfdf;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0px;
+  padding: 20px 0 10px;
+  text-transform: uppercase;
+}
+.footer ul {
+  font-size: 13px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 15px;
+  color: #FFFFFF;
+}
+.footer ul li a {
+  padding: 0 0 5px 0;
+  display: block;
+}
+.footer a {
+  color: #FFFFFF;
+  opacity: .7;
+}
+.footer a:not(.btn):hover {
+  opacity: 1;
+  text-decoration: none;
+}
+.supportLi h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: normal;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+  background: #FFFFFF;
+  display: inline-block;
+  float: left;
+  height: 30px;
+  clear: both;
+  width: 100%;
+}
+.newsletter-box .btn {
+  border: medium none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  height: 40px;
+  padding: 0;
+  width: 100%;
+  color: #fff;
+}
+.newsletter-box {
+  overflow: hidden;
+}
+.bg-gray {
+  background-image: -moz-linear-gradient(center bottom, #2780E3 0%, #2780E3 100%);
+  box-shadow: 0 1px 0 #2780E3;
+}
+.social li {
+  background: none repeat scroll 0 0;
+  border: 2px solid #B5B5B5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 36px;
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+  transform: scale(1.15) rotate(360deg);
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+  color: #EDEFF1;
+}
+.social li:hover {
+  border: 2px solid #3FB618;
+  background: #3FB618;
+}
+.social li a i {
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  color: #EDEFF1 !important;
+}
+.footer-bottom {
+  background: #202020;
+  color: #c3c3c3;
+  padding: 10px;
+  padding: 5px;
+  margin: 0px;
+}
+.footer-bottom p.pull-left {
+  line-height: 17px;
+}
+
+#email{
+  color: #000000;
+  font-size: 18px;
+}
+
+.brand-logo {
+  width: 50px;
+  display: inline;
+  margin: 3px;
+  opacity: .5;
+}
+
+.brand-logo:hover {
+  opacity: 1;
+}
+
+/*********************************************
+********                              ********
+********         Contact Modal        ********
+********                              ********
+*********************************************/
+
+#overlay {
+  visibility: hidden;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  height:100%;
+  text-align:center;
+  z-index: 1000;
+  background-image:url(../img/transparent.png);
+}
+
+#overlay div {
+  width:300px;
+  margin: 100px auto;
+  background-color: #fff;
+  border:1px solid #000;
+  padding:15px;
+  text-align:center;
+}
+
+/*********************************************
+********                              ********
+********   Selecting a plan section   ********
+********                              ********
+*********************************************/
+
+.table {
+  font-size: 20px;
+}
+
+.table thead tr th {
+  font-size: 30px;
+}
+
+.table tbody tr td {
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#choice-phone-button {
+  width: 270px;
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+#choice-smartphone-button {
+  width: 270px;
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+#choice-byop-button {
+  width: 270px;
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+#payg-plan-button {
+  width: 405px;
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+#month-plan-button {
+  width: 405px;
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+#choose-section {
+  margin-top: 36px;
+  color: white;
+  background-color: white;
+}
+
+#choose-phone-section {
+  display: none;
+}
+
+#choose-smartphone-section {
+  display: none;
+}
+
+#choose-default-section {
+  display: inline;
+}
+
+#choose-byop-section {
+  display: none;
+  margin-top: 20px;
+}
+
+#choose-byop-section .row div{
+  display: inline-block;
+  height: 225px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+/*********************************************
+********                              ********
+********         Phones Slider        ********
+********                              ********
+*********************************************/
+
+.frame {
+	height: 240px;
+  margin-left: 0px auto;
+  margin-right: 0px auto;
+  margin-bottom: 60px;
+  padding: 0px 0px; //(ver,hor)
+	overflow: hidden;
+  width: 100%;
+}
+.slidee {
+	list-style: none;
+	margin: 0px 0px;
+  padding: 0px 0px;
+	height: 100%;
+  width: 100%;
+	font-size: 12px;
+}
+.slidee li {
+	float: left;
+	height: 100%;
+  width: 150px;
+	margin: 0 10px 0 0;
+  padding: 5px;
+	background: whitesmoke;
+  border: 1px solid white;
+	color: #000;
+	text-align: center;
+  vertical-align: middle;
+	cursor: pointer;
+}
+.slidee li.active {
+	background-color: #3EB318;
+  color: white;
+}
+
+.active {
+	background-color: #3EB318;
+}
+
+.scrollbar {
+	margin: 0 0 1em 0;
+	height: 5px;
+	background: #ccc;
+	line-height: 0;
+}
+.scrollbar .handle {
+	width: 100px;
+	height: 100%;
+	background: #292a33;
+	cursor: pointer;
+}
+.scrollbar .handle .mousearea {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+
+/*********************************************
+********                              ********
+********       Selecting a plan       ********
+********                              ********
+*********************************************/
+
+#plans-info {
+  display: none;
+}
+
+#PAYG {
+  display: none;
+}
+
+#month {
+  display: none;
+}
+
+#plan-buttons {
+  visibility: hidden;
+}
+
+.plan {
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.plan-inside {
+  padding: 5px;
+  background-color: white;
+  border-top: 1px solid #2780E3;
+  border-left: 1px solid #2780E3;
+  border-right: 1px solid #2780E3;
+  height:250px;
+}
+
+.special-card {
+  padding: 5px;
+  background-color: white;
+  border-top: 1px solid #2780E3;
+  border-left: 1px solid #2780E3;
+  border-right: 1px solid #2780E3;
+  height:150px;
+  text-align: center;
+}
+
+.selected-plan {
+  color: red;
+}
+
+.family {
+  background-color: #2780E3;
+}
+
+.family .plan-price,
+.family .ar-price,
+.family .plan-desc{
+  color: white;
+}
+
+
+
+.selected-plan {
+  border-bottom: 1px solid white;
+  background-color: #3EB318;
+}
+
+.selected-plan .plan-price,
+.selected-plan .ar-price,
+.selected-plan .plan-desc{
+  color: white;
+}
+
+img.checked {
+  top: 0;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  display: none;
+}
+
+img.appear {
+  display: inline !important;
+}
+
+.plan-inside hr {
+  width: 50%;
+}
+
+hr.yearly {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.webex {
+  background-image: url("../img/webex.png");
+  background-repeat: no-repeat;
+}
+
+.plan-price {
+  padding-top: 30px;
+  line-height: 140%;
+  color: #2780E3;
+  font-size: 55px;
+}
+
+.ar-price {
+  padding: 0px;
+  font-size: 14px;
+  line-height: 0%;
+  color: #2780E3;
+}
+
+.plan-desc {
+  line-height: 130%;
+  font-size: 20px;
+  padding: 5px;
+}
+
+a .plan-desc {
+  line-height: 130%;
+  font-size: 20px;
+  color: dimgray;
+}
+
+.plan-select {
+  background-color: #3EB318;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 20px;
+  height: 50px;
+  color: white;
+}
+
+.plan-price sup {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+/* Special Cards */
+
+img.card {
+  margin-bottom: 10px;
+  height: 150px;
+}
+
+.card-price {
+  font-size: 30px;
+  font-weight: 100;
+  color: #2780E3;
+  margin: 0px;
+}
+
+.card-price sup {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+/*********************************************
+********                              ********
+********    Bootstrap 5-column fix    ********
+********                              ********
+*********************************************/
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+/*********************************************
+********                              ********
+********             Other            ********
+********                              ********
+*********************************************/
+
+/* Center Jumbotron Content */
+
+.jumbotron {
+  text-align: center;
+}
+
+/* Center non-jumbotron content with specific padding */
+
+.starter-template {
+  padding:20px 15px;
+  text-align:center;
+}

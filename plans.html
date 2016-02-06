@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<!-- Tracfone.com 2.0 by Deniss Jacenko -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Plans | Tracfone Wireless</title>
+
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="import" href="./components.html">
+
+    <!--[if IE]>
+<script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+
+  <body>
+    <!--  div for everything but the footer  -->
+    <div class="content">
+
+      <div id="nav"></div>
+
+      <div id="no-nav" class="top-shift">
+
+        <!-- All other content other than the footer -->
+        <div class="container">
+          <div class="starter-template">
+            <h1 style="margin-bottom:36px">Preview our plans:</h1>
+            <a  id="choice-phone-button"
+                class="btn btn-primary btn-lg"
+                href="#/"
+                onclick="choosePhone();"
+                role="button">
+              <h5 style="line-height:90%">Choose a</h5>
+              <h1 style="line-height:5%">Phone</h1>
+            </a>
+
+            <a  id="choice-smartphone-button"
+                class="btn btn-primary btn-lg"
+                href="#/"
+                onclick="chooseSmartphone();"
+                role="button">
+              <h5 style="line-height:90%">Choose a</h5>
+              <h1 style="line-height:5%">Smartphone</h1>
+            </a>
+
+            <a  id="choice-byop-button"
+                class="btn btn-primary btn-lg"
+                href="#/"
+                onclick="chooseBYOP();"
+                role="button">
+              <h5 style="line-height:90%">Bring Your</h5>
+              <h1 style="line-height:5%">Own Phone</h1>
+            </a>
+
+
+            <div id="choose-section">
+
+              <div id="choose-default-section">
+                <div class="scrollbar">
+                  <div class="handle"></div>
+                </div>
+                <div class="frame">
+                  <ul class="slidee">
+                    <li>Loading...</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="choose-byop-section">
+                <div class="row">
+                  <div  id="byop-phone"
+                        class="col-lg-6 col-md-6 col-sm-6 col-xs-12"
+                        onclick="byopSelectPhone();">
+                    <img src="./img/phoneChoice.png">
+                  </div>
+
+                  <div  id="byop-smart"
+                        class="col-lg-6 col-md-6 col-sm-6 col-xs-12"
+                        onclick="byopSelectSmartphone();">
+                    <img src="./img/smartphoneChoice.png">
+                  </div>
+                </div>
+              </div>
+
+              <div id="choose-phone-section">
+                <li>Alcatel The Big Easy<img src="img/handsets/TFALA383G/large.gif"></li>
+                <li>LG 221C<img src="img/handsets/TFLG221C/large.gif"></li>
+                <li>LG 0225B<img src="img/handsets/TFLG0225DMP/large.gif"></li>
+                <li>LG 290C<img src="img/handsets/TFLG290C/large.gif"></li>
+                <li>Motorola W175g<img src="img/handsets/TFMTW175P/large.gif"></li>
+                <li>Alcatel The Big Easy<img src="img/handsets/TFALA383G/large.gif"></li>
+                <li>LG 221C<img src="img/handsets/TFLG221C/large.gif"></li>
+                <li>LG 0225B<img src="img/handsets/TFLG0225DMP/large.gif"></li>
+                <li>LG 290C<img src="img/handsets/TFLG290C/large.gif"></li>
+                <li>Motorola W175g<img src="img/handsets/TFMTW175P/large.gif"></li>
+                <li>Alcatel The Big Easy<img src="img/handsets/TFALA383G/large.gif"></li>
+                <li>LG 221C<img src="img/handsets/TFLG221C/large.gif"></li>
+                <li>LG 0225B<img src="img/handsets/TFLG0225DMP/large.gif"></li>
+                <li>LG 290C<img src="img/handsets/TFLG290C/large.gif"></li>
+                <li>Motorola W175g<img src="img/handsets/TFMTW175P/large.gif"></li>
+                <li>Alcatel The Big Easy<img src="img/handsets/TFALA383G/large.gif"></li>
+                <li>LG 221C<img src="img/handsets/TFLG221C/large.gif"></li>
+                <li>LG 0225B<img src="img/handsets/TFLG0225DMP/large.gif"></li>
+                <li>LG 290C<img src="img/handsets/TFLG290C/large.gif"></li>
+                <li>Motorola W175g<img src="img/handsets/TFMTW175P/large.gif"></li>
+              </div>
+
+              <div id="choose-smartphone-section">
+                <li>LG Sunrise<img src="img/handsets/TFLGL15G/large.gif"></li>
+                <li>LG Destiny<img src="img/handsets/TFLGL21G/large.gif"></li>
+                <li>ZTE Whirl<img src="img/handsets/TFZEZ660G/large.gif"></li>
+                <li>ZTE Whirl 2<img src="img/handsets/TFZEZ667G/large.gif"></li>
+                <li>ZTE Paragon<img src="img/handsets/TFZEZ753G/large.gif"></li>
+                <li>LG Sunrise<img src="img/handsets/TFLGL15G/large.gif"></li>
+                <li>LG Destiny<img src="img/handsets/TFLGL21G/large.gif"></li>
+                <li>ZTE Whirl<img src="img/handsets/TFZEZ660G/large.gif"></li>
+                <li>ZTE Whirl 2<img src="img/handsets/TFZEZ667G/large.gif"></li>
+                <li>ZTE Paragon<img src="img/handsets/TFZEZ753G/large.gif"></li>
+                <li>LG Sunrise<img src="img/handsets/TFLGL15G/large.gif"></li>
+                <li>LG Destiny<img src="img/handsets/TFLGL21G/large.gif"></li>
+                <li>ZTE Whirl<img src="img/handsets/TFZEZ660G/large.gif"></li>
+                <li>ZTE Whirl 2<img src="img/handsets/TFZEZ667G/large.gif"></li>
+                <li>ZTE Paragon<img src="img/handsets/TFZEZ753G/large.gif"></li>
+                <li>LG Sunrise<img src="img/handsets/TFLGL15G/large.gif"></li>
+                <li>LG Destiny<img src="img/handsets/TFLGL21G/large.gif"></li>
+                <li>ZTE Whirl<img src="img/handsets/TFZEZ660G/large.gif"></li>
+                <li>ZTE Whirl 2<img src="img/handsets/TFZEZ667G/large.gif"></li>
+                <li>ZTE Paragon<img src="img/handsets/TFZEZ753G/large.gif"></li>
+              </div>
+            </div>
+
+            <div id="plan-buttons">
+              <a id="payg-plan-button" class="btn btn-default btn-lg" href="#/" role="button" onclick="payReveal(); $('#PAYG').ScrollTo();"><h1 style="line-height:1%">Pay As You Go</h1><br><h5 style="line-height:1%">Flexible options with no contracts, bills, fees, or surprises</h5></a>
+              <a id="month-plan-button" class="btn btn-default btn-lg" href="#/" role="button" onclick="monthReveal(); $('#month').ScrollTo();"><h1 style="line-height:1%">Monthly Value</h1><br><h5 style="line-height:1%">Traditional individual/family offerings</h5></a>
+            </div>
+          </div>
+
+          <div id="plans-info">
+            <div id="PAYG">
+              <div style="margin-top: 20px;" class="jumbotron">
+
+                <h1>You Are in Control of Your Plan</h1>
+                <p style="margin-bottom:40px">With Pay-As-You-Go there are no contracts, bills, fees, or surprises.
+                  The plan you choose comes with minutes that you can use within the specified service days.
+                  All Pay-As-You-Go plans come with Unlimited Carryover®, so if you don't use up your airtime in the alloted
+                  service days, you can carry your minutes over when you renew your plan. You may optionally include
+                  Auto-Refill to simplify the renewal process and save 10% on your plan.</p>
+
+
+                <h3 style="margin:50px 0px 20px"><strong>Pay-As-You-Go Plans</strong></h3>
+
+                <!-- 30/90-Day Plans -->
+
+                <div class="row">
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside webex" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>9<sup>99</sup></div>
+                      <div class="ar-price"><strong>$8.99</strong> with Auto-Refill</div>
+                      <hr>
+                      <div class="plan-desc"><strong>30</strong> minutes<br><strong>30</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>19<sup>99</sup></div>
+                      <div class="ar-price"><strong>$17.99</strong> with Auto-Refill</div>
+                      <hr>
+                      <div class="plan-desc"><strong>60</strong> minutes<br><strong>90</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>29<sup>99</sup></div>
+                      <div class="ar-price"><strong>$26.99</strong> with Auto-Refill</div>
+                      <hr>
+                      <div class="plan-desc"><strong>120</strong> minutes<br><strong>90</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>39<sup>99</sup></div>
+                      <div class="ar-price"><strong>$35.99</strong> with Auto-Refill</div>
+                      <hr>
+                      <div class="plan-desc"><strong>200</strong> minutes<br><strong>90</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>79<sup>99</sup></div>
+                      <div class="ar-price"><strong>$71.99</strong> with Auto-Refill</div>
+                      <hr>
+                      <div class="plan-desc"><strong>450</strong> minutes<br><strong>90</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+                </div>
+
+                <hr style="margin-top:40px">
+                <h3 style="margin:40px 0px 20px"><strong>Yearly Plans with optional Double Minutes</strong></h3>
+
+                <!-- Yearly Plans -->
+
+                <div class="row">
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>99<sup>99</sup></div>
+                      <hr class="yearly">
+                      <div class="plan-desc"><strong>400</strong> minutes<br><strong>365</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>119<sup>99*</sup></div>
+                      <hr class="yearly">
+                      <div class="plan-desc"><strong>800*</strong> minutes<br><strong>365</strong> service days
+                        <br><span style="font-size: 13px;"><strong>*Double Minutes</strong> on all future paid airtime</span></div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside webex" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>159<sup>99</sup></div>
+                      <hr class="yearly">
+                      <div class="plan-desc"><strong>1000</strong> minutes<br><strong>365</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside webex" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>199<sup>99</sup></div>
+                      <hr class="yearly">
+                      <div class="plan-desc"><strong>1500</strong> minutes<br><strong>365</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12 plan">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>19<sup>99</sup></div>
+                      <hr class="yearly">
+                      <div class="plan-desc"><strong>Double Minutes</strong> on all future paid airtime</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT ADD-ON</div>
+                    </div>
+                    </div></a>
+                </div>
+                <hr>
+                <h2 style="margin-top: 70px;">Service Protection</h2>
+                <div style="padding-right: 20px; padding-left: 20px;">
+                  <h4 style="line-height: 27px;">
+                    Avoid accidentally losing your service plan and phone number by enrolling in our Service Protection Plan.
+                    If you enroll today, you will automatically receive a 30-day extension on your service if you forget to add
+                    an airtime card before the end of your service period.
+                    Enrollment is free. You pay the $5.99 fee only if you reach your Service End Date.
+                    <br><br>
+                    To enroll, visit our <a href="#/" onclick="monthReveal(); $('#month').ScrollTo();">Value Plan Page</a>.
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div id="month">
+              <div style="margin-top: 20px;" class="jumbotron">
+
+                <h1>A Simple Plan for Every Month</h1>
+                <p style="margin-bottom:40px">This is something you're already used to but with no contracts
+                  or activation and cancellation fees. If you have a more consistent phone-usage schedule or
+                  if you want to share minutes with your family, a Monthly Value plan is perfect for you.
+                  You can use the airtime monthly and if you happen to not use up your minutes by the end of
+                  your billing period, you can take advantage of Unlimited Carryover®, included in
+                  every Montly Value plan, and add them to your next month. Choosing a family plan will
+                  give you a 40% discount on airtime for all additional phones.
+                </p>
+
+
+                <h3 style="margin:50px 0px 20px"><strong>Monthly Value Plans</strong></h3>
+
+                <!-- 30/90-Day Plans -->
+
+                <div class="row">
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>9<sup>99</sup></div>
+                      <div class="ar-price"><strong>Value Plan</strong></div>
+                      <hr>
+                      <div class="plan-desc"><strong>50</strong> minutes<br><strong>30</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>19<sup>99</sup></div>
+                      <div class="ar-price"><strong>Value Plan</strong></div>
+                      <hr>
+                      <div class="plan-desc"><strong>125</strong> minutes<br><strong>30</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-xs-12">
+                    <div class="plan-inside" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>29<sup>99</sup></div>
+                      <div class="ar-price"><strong>Value Plan</strong></div>
+                      <hr>
+                      <div class="plan-desc"><strong>200</strong> minutes<br><strong>30</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-sm-4 col-xs-12">
+                    <div class="plan-inside family" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>9<sup>99</sup></div>
+                      <div class="ar-price"><strong>Family Value Plan</strong></div>
+                      <hr>
+                      <div class="plan-desc"><strong>50</strong> minutes<br><strong>30</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+
+                  <a href="#/"><div class="col-lg-5ths col-md-4 col-sm-4 col-sm-4 col-xs-12">
+                    <div class="plan-inside family" onclick="selectPlan(this);">
+                      <img class="checked" src="./img/checkmark.png">
+                      <div class="plan-price"><sup>$</sup>5<sup>99</sup></div>
+                      <div class="ar-price"><strong>Aditional Phones</strong></div>
+                      <hr>
+                      <div class="plan-desc"><strong>40</strong> minutes<br><strong>30</strong> service days</div>
+                    </div>
+                    <div style="display: table; overflow: hidden; width: 100%">
+                      <div class="plan-select">SELECT PLAN</div>
+                    </div>
+                    </div></a>
+                </div>
+                <hr>
+                <h2 style="margin-top: 50px;">Service Protection</h2>
+                <div style="padding-right: 20px; padding-left: 20px;">
+                  <h4 style="line-height: 27px;">
+                    Avoid accidentally losing your service plan and phone number by enrolling in our Service Protection Plan.
+                    If you enroll today, you will automatically receive a 30-day extension on your service if you forget to add
+                    an airtime card before the end of your service period.
+                    Enrollment is free. You pay the $5.99 fee only if you reach your Service End Date.
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Special Cards and Protection Plan -->
+            <div class="row" style="margin-bottom: 20px;">
+              <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12" style="text-align: center">
+                <h2>Special Cards*</h2>
+
+
+                <div class="row" style="padding-top:15px; padding-bottom:15px; background-color: #E6E6E6; padding-right: 10px;">
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding:15px;">
+                    <img class="card" src="./img/300mb.gif">
+                    <p><strong>300 MB</strong> of data for Web Browsing</p>
+                    <p class="card-price"><input type="checkbox" id="test1"/> <sup>$</sup>10</p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding:15px;">
+                    <img class="card" src="./img/750mb.gif">
+                    <p><strong>750 MB</strong> of data for Web Browsing</p>
+                    <p class="card-price"><input type="checkbox" id="test1"/> <sup>$</sup>20</p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding:15px;">
+                    <img class="card" src="./img/2000mb.gif">
+                    <p><strong>2000 MB</strong> of data for Web Browsing</p>
+                    <p class="card-price"><input type="checkbox" id="test1"/> <sup>$</sup>50</p>
+                  </div>
+                  <h6 style="margin: 0xp; padding: 0px; color: gray;">* For use with smartphones only</h6>
+                </div>
+
+              </div>
+
+              <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+                <h2 style="text-align: center">Shopping Cart</h2>
+
+                <div style="padding:20px; background-color: #FDFDFD; border: 1px solid #E6E6E6; text-align: right; min-height: 280px;">
+                  <span style="float: left;">125 Minutes Value Plan</span><span>$19.99</span><br>
+                  <span style="float: left;">2GB of Data</span><span>$50.00</span><br>
+                  <hr style="margin-bottom: 5px; margin-top: 5px;">
+                  <span style="font-weight: light; font-size: 20px;"><strong>Total:</strong> $119.99</span>
+                  <br>
+                </div>
+                <div style="text-align: center;"><a class="btn btn-success btn-md" href="#/" role="button" style="margin-top: 20px;">
+                    Proceed to Checkout
+                  </a></div>
+              </div>
+            </div>
+
+          </div>
+
+          <br><br>
+
+        </div>
+
+        <!-- Footer Import -->
+        <div id="foot"></div>
+
+        <!-- Contact Modal -->
+        <div id="overlay">
+          <div>
+            <a id="x" style="float:right;color:#000000;" href='#'><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+            <p><img src="../img/logo.png"></p>
+            <h2>Contact Information</h2>
+            <p><strong>For Customer Service:</strong></p>
+            <p>Tracfone: 1-800-867-7183</p>
+            <br>
+            <h6><strong>Centers operate</strong> from 8AM to midnight (EST) 7 days a week</h6>
+            <br>
+            <p><strong>Mailing Address:</strong></p>
+            <p>Tracfone Wireless, Inc.</p>
+            <p>9700 NW 112th Avenue</p>
+            <p>Miami, FL 33178</p>
+            <br>
+            <p><strong>Media Contact:</strong></p>
+            <p>media@tracfone.com</p>
+            <p><strong>Corporate:</strong></p>
+            <p>CorporateOffice@tracfone.com</p>
+            <br>
+          </div><!-- #overlay div -->
+        </div><!-- #overlay -->
+      </div><!-- #no-nav -->
+    </div><!-- .content -->
+
+    <img id="scroll-to-top" src="./img/arrow-up.png" onclick="$('body').ScrollTo();">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/sly.js"></script>
+    <script src="./js/jquery-scrollto/lib/jquery-scrollto.js"></script>
+    <script>new WOW().init();</script>
+  </body>
+</html>
