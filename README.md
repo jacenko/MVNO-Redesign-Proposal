@@ -3,7 +3,7 @@ MVNO/Wireless Carrier Website Redesign
 
 For a personal research project, I picked the website of a wireless carrier brand and researched some ground-up improvements that could be made.
 
-The two main goals were simplifying the Home page and merging all Plan pages into a single one-page flow.
+The two main goals were simplifying the Home page and merging all Plan pages into a simple one-page flow.
 
 > **Some Technologies used:**
 
